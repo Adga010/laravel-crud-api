@@ -1,0 +1,136 @@
+{
+    "info": {
+        "_postman_id": "4eec11ef-cf16-45d1-a0a5-c17732e20676",
+        "name": "api-students",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "get-id-student",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/student/06a0c1fa-eddb-47b4-852b-ca069c61798b",
+                    "path": [
+                        "api",
+                        "student",
+                        "06a0c1fa-eddb-47b4-852b-ca069c61798b"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "delete-id-student",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/student/06a0c1fa-eddb-47b4-852b-ca069c617984545",
+                    "path": [
+                        "api",
+                        "student",
+                        "06a0c1fa-eddb-47b4-852b-ca069c617984545"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "register-student",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/student",
+                    "path": [
+                        "api",
+                        "student"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"xxxxxxxxxxx\",\n  \"email\": \"oscar.peregz@example.com\",\n  \"phone\": \"1234567890\",\n  \"age\": 1,\n  \"language\": \"ccc\"\n}\n"
+                }
+            }
+        },
+        {
+            "name": "get-students",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/students",
+                    "path": [
+                        "api",
+                        "students"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "update-student",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/student/f2fb2628-fe35-4bd4-bdb1-c4522e24c28f",
+                    "path": [
+                        "api",
+                        "student",
+                        "f2fb2628-fe35-4bd4-bdb1-c4522e24c28f"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"xxxx\",\n  \"email\": \"scar.peregz@example.com\",\n  \"phone\": \"1234567899\",\n  \"age\": \"10\",\n  \"language\": \"ccc\"\n}\n"
+                }
+            }
+        }
+    ]
+}
